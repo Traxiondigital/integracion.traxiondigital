@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* compensa el header fijo al navegar con anclas */
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    @apply bg-white font-sans text-petrol-900 antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    @apply bg-gold-400 text-petrol-950;
+  }
+
+  /* Foco visible y accesible */
+  :focus-visible {
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Scrollbar sutil */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #eef4f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #74a3aa;
+  border-radius: 999px;
+  border: 2px solid #eef4f5;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4a7f87;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
