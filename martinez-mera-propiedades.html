@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Martínez Mera Propiedades | Asesoría inmobiliaria confiable</title>
+<meta name="description" content="Corredora inmobiliaria boutique. Te acompañamos a vender, comprar o arrendar tu propiedad con una gestión profesional, cercana y enfocada en resultados." />
+<meta name="theme-color" content="#0f2529" />
+<meta property="og:title" content="Martínez Mera Propiedades | Asesoría inmobiliaria confiable" />
+<meta property="og:description" content="Corredora inmobiliaria boutique. Vende, compra o arrienda con una gestión profesional y cercana." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="es_CL" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      container: { center: true, padding: { DEFAULT: "1.25rem", sm: "1.5rem", lg: "2rem" }, screens: { "2xl": "1200px" } },
+      extend: {
+        colors: {
+          petrol: { 50:"#eef4f5",100:"#d3e2e4",200:"#a7c5ca",300:"#74a3aa",400:"#4a7f87",500:"#2f636b",600:"#235058",700:"#1c4046",800:"#163338",900:"#0f2529",950:"#08171a" },
+          gold: { 50:"#fbf8f1",100:"#f4ecd9",200:"#e8d6ad",300:"#dabd7c",400:"#cda659",500:"#c08f3e",600:"#a87432",700:"#87592b",800:"#704929",900:"#5f3e26" },
+          sand: "#f5f3ee", cloud: "#f4f6f7",
+        },
+        fontFamily: { serif: ["'Playfair Display'","Georgia","serif"], sans: ["Inter","system-ui","sans-serif"] },
+        boxShadow: {
+          soft: "0 10px 40px -15px rgba(15,37,41,0.18)",
+          card: "0 18px 50px -24px rgba(15,37,41,0.28)",
+        },
+        keyframes: {
+          "fade-up": { "0%": { opacity:"0", transform:"translateY(18px)" }, "100%": { opacity:"1", transform:"translateY(0)" } },
+        },
+        animation: { "fade-up": "fade-up 0.7s ease-out both" },
+      },
+    },
+  };
+</script>
+<style>
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  body { font-family: Inter, system-ui, sans-serif; }
+  h1,h2,h3,.font-serif { font-family: 'Playfair Display', Georgia, serif; }
+  ::selection { background:#cda659; color:#08171a; }
+  ::-webkit-scrollbar { width:10px; }
+  ::-webkit-scrollbar-track { background:#eef4f5; }
+  ::-webkit-scrollbar-thumb { background:#74a3aa; border-radius:999px; border:2px solid #eef4f5; }
+  ::-webkit-scrollbar-thumb:hover { background:#4a7f87; }
+  .bg-hero-overlay { background:linear-gradient(120deg, rgba(8,23,26,0.92) 0%, rgba(15,37,41,0.78) 45%, rgba(15,37,41,0.45) 100%); }
+  @media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation-duration:.001ms!important; transition-duration:.001ms!important; scroll-behavior:auto!important; } }
+</style>
+</head>
+<body class="bg-white text-petrol-900 antialiased">
+
+<!-- ================= HEADER ================= -->
+<header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
+  <div class="container flex h-[72px] items-center justify-between gap-4">
+    <a href="#inicio" class="flex items-center gap-3" aria-label="Martínez Mera Propiedades — Inicio">
+      <span id="logo-badge" class="grid h-10 w-10 place-items-center rounded-full border border-white/30 bg-white/10 text-sm font-serif font-semibold text-gold-300 backdrop-blur">MM</span>
+      <span class="leading-tight">
+        <span id="logo-name" class="block font-serif text-base font-semibold tracking-wide text-white">Martínez Mera</span>
+        <span class="block text-[10px] font-medium uppercase tracking-[0.3em] text-gold-300">Propiedades</span>
+      </span>
+    </a>
+
+    <nav class="hidden items-center gap-7 lg:flex" aria-label="Principal">
+      <a href="#inicio" class="nav-link text-sm font-medium text-white/90 transition-colors hover:text-gold-500">Inicio</a>
+      <a href="#propiedades" class="nav-link text-sm font-medium text-white/90 transition-colors hover:text-gold-500">Propiedades</a>
+      <a href="#servicios" class="nav-link text-sm font-medium text-white/90 transition-colors hover:text-gold-500">Servicios</a>
+      <a href="#vende" class="nav-link text-sm font-medium text-white/90 transition-colors hover:text-gold-500">Vende tu propiedad</a>
+      <a href="#nosotros" class="nav-link text-sm font-medium text-white/90 transition-colors hover:text-gold-500">Nosotros</a>
+      <a href="#contacto" class="nav-link text-sm font-medium text-white/90 transition-colors hover:text-gold-500">Contacto</a>
+    </nav>
+
+    <div class="hidden lg:flex">
+      <a id="cta-whatsapp" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full bg-gold-400 px-5 py-2.5 text-sm font-semibold text-petrol-950 shadow-soft transition hover:bg-gold-300">
+        <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor"><path d="M12.05 3a8.94 8.94 0 0 0-7.6 13.66L3 21l4.46-1.39A8.94 8.94 0 1 0 12.05 3Zm0 1.6a7.34 7.34 0 0 1 6.2 11.27 7.3 7.3 0 0 1-9.27 2.55l-.33-.18-2.65.82.83-2.57-.2-.34A7.34 7.34 0 0 1 12.05 4.6Zm-2.2 3.3c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02s.87 2.35.99 2.51c.12.16 1.71 2.74 4.22 3.74 2.09.83 2.51.66 2.97.62.46-.04 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.48-.73-1.71-.81-.23-.08-.4-.12-.56.12-.16.24-.64.81-.79.97-.14.16-.29.18-.53.06-.24-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.71-.14-.24-.02-.37.1-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.36-.77-1.86-.18-.42-.36-.41-.51-.42h-.4Z"/></svg>
+        Agendar asesoría
+      </a>
+    </div>
+
+    <button id="menu-btn" type="button" class="inline-flex h-11 w-11 items-center justify-center rounded-lg text-white transition hover:bg-white/10 lg:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">
+      <svg id="menu-icon" viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+
+  <!-- Menú móvil -->
+  <div id="mobile-menu" class="hidden lg:hidden">
+    <div id="mobile-overlay" class="fixed inset-0 top-[72px] bg-petrol-950/40"></div>
+    <nav class="absolute inset-x-0 top-[72px] border-t border-petrol-100 bg-white px-5 py-6 shadow-card" aria-label="Móvil">
+      <ul class="flex flex-col gap-1">
+        <li><a href="#inicio" class="m-link block rounded-lg px-4 py-3 text-base font-medium text-petrol-800 transition hover:bg-petrol-50 hover:text-gold-600">Inicio</a></li>
+        <li><a href="#propiedades" class="m-link block rounded-lg px-4 py-3 text-base font-medium text-petrol-800 transition hover:bg-petrol-50 hover:text-gold-600">Propiedades</a></li>
+        <li><a href="#servicios" class="m-link block rounded-lg px-4 py-3 text-base font-medium text-petrol-800 transition hover:bg-petrol-50 hover:text-gold-600">Servicios</a></li>
+        <li><a href="#vende" class="m-link block rounded-lg px-4 py-3 text-base font-medium text-petrol-800 transition hover:bg-petrol-50 hover:text-gold-600">Vende tu propiedad</a></li>
+        <li><a href="#nosotros" class="m-link block rounded-lg px-4 py-3 text-base font-medium text-petrol-800 transition hover:bg-petrol-50 hover:text-gold-600">Nosotros</a></li>
+        <li><a href="#contacto" class="m-link block rounded-lg px-4 py-3 text-base font-medium text-petrol-800 transition hover:bg-petrol-50 hover:text-gold-600">Contacto</a></li>
+      </ul>
+      <a id="cta-whatsapp-m" href="#" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gold-400 px-5 py-3 text-sm font-semibold text-petrol-950 shadow-soft transition hover:bg-gold-300">
+        Contactar por WhatsApp
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ================= HERO ================= -->
+<section id="inicio" class="relative isolate overflow-hidden">
+  <div class="absolute inset-0 -z-10">
+    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=2000&q=80" alt="Vivienda moderna y elegante" class="h-full w-full object-cover" />
+    <div class="absolute inset-0 bg-hero-overlay"></div>
+  </div>
+  <div class="container flex min-h-[88vh] flex-col justify-center py-32 sm:min-h-screen">
+    <div class="max-w-3xl animate-fade-up">
+      <span class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.22em] text-gold-300 backdrop-blur">Corredora inmobiliaria boutique</span>
+      <h1 class="mt-6 text-4xl leading-[1.08] text-white sm:text-5xl lg:text-6xl">Encuentra, vende o arrienda tu propiedad con una asesoría inmobiliaria <span class="text-gold-300">confiable</span>.</h1>
+      <p class="mt-6 max-w-xl text-lg leading-relaxed text-petrol-100/90">En Martínez Mera Propiedades te acompañamos en cada etapa del proceso inmobiliario, con una gestión profesional, cercana y enfocada en resultados.</p>
+      <div class="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+        <a href="#propiedades" class="inline-flex items-center justify-center rounded-full bg-gold-400 px-7 py-3.5 text-sm font-semibold text-petrol-950 shadow-card transition hover:-translate-y-0.5 hover:bg-gold-300">Ver propiedades</a>
+        <a href="#vende" class="inline-flex items-center justify-center rounded-full border border-white/40 bg-white/5 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur transition hover:border-white hover:bg-white/10">Quiero vender mi propiedad</a>
+      </div>
+      <ul class="mt-10 flex flex-wrap gap-x-8 gap-y-3">
+        <li class="flex items-center gap-2 text-sm font-medium text-white/85"><span class="grid h-5 w-5 place-items-center rounded-full bg-gold-400/90 text-petrol-950"><svg viewBox="0 0 24 24" class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span>+15 años de experiencia</li>
+        <li class="flex items-center gap-2 text-sm font-medium text-white/85"><span class="grid h-5 w-5 place-items-center rounded-full bg-gold-400/90 text-petrol-950"><svg viewBox="0 0 24 24" class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span>Atención personalizada</li>
+        <li class="flex items-center gap-2 text-sm font-medium text-white/85"><span class="grid h-5 w-5 place-items-center rounded-full bg-gold-400/90 text-petrol-950"><svg viewBox="0 0 24 24" class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span>Gestión transparente</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FRANJA DE CONFIANZA ================= -->
+<section class="relative z-10 -mt-1 bg-petrol-900">
+  <div class="container py-12 lg:py-14">
+    <div class="grid gap-px overflow-hidden rounded-2xl bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="flex flex-col gap-3 bg-petrol-900 p-7 transition-colors hover:bg-petrol-800">
+        <span class="grid h-11 w-11 place-items-center rounded-xl bg-gold-400/15 text-gold-300"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v5c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <h3 class="font-serif text-lg text-white">Gestión profesional de propiedades</h3>
+        <p class="text-sm leading-relaxed text-petrol-100/70">Procesos ordenados y transparentes en cada etapa de la operación.</p>
+      </div>
+      <div class="flex flex-col gap-3 bg-petrol-900 p-7 transition-colors hover:bg-petrol-800">
+        <span class="grid h-11 w-11 place-items-center rounded-xl bg-gold-400/15 text-gold-300"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 0 0 1.4 0l4.6-4.6"/><path d="m3 12 4.5-4.5a2 2 0 0 1 2.8 0L13 10"/><path d="M14 11h2l4 4"/><path d="M3 12v4l3 3"/></svg></span>
+        <h3 class="font-serif text-lg text-white">Acompañamiento en todo el proceso</h3>
+        <p class="text-sm leading-relaxed text-petrol-100/70">Te guiamos desde la primera consulta hasta la firma final.</p>
+      </div>
+      <div class="flex flex-col gap-3 bg-petrol-900 p-7 transition-colors hover:bg-petrol-800">
+        <span class="grid h-11 w-11 place-items-center rounded-xl bg-gold-400/15 text-gold-300"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a1 1 0 0 0 1 1h2l4 3V7L6 10H4a1 1 0 0 0-1 1Z"/><path d="M14 8a4 4 0 0 1 0 8M17 5a8 8 0 0 1 0 14"/></svg></span>
+        <h3 class="font-serif text-lg text-white">Publicación estratégica</h3>
+        <p class="text-sm leading-relaxed text-petrol-100/70">Difusión en los principales portales inmobiliarios y canales digitales.</p>
+      </div>
+      <div class="flex flex-col gap-3 bg-petrol-900 p-7 transition-colors hover:bg-petrol-800">
+        <span class="grid h-11 w-11 place-items-center rounded-xl bg-gold-400/15 text-gold-300"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M3 20a6 6 0 0 1 12 0"/><path d="M16 5a3.5 3.5 0 0 1 0 7M17 20a6 6 0 0 0-3-5.2"/></svg></span>
+        <h3 class="font-serif text-lg text-white">Atención personalizada</h3>
+        <p class="text-sm leading-relaxed text-petrol-100/70">Para propietarios, compradores y arrendatarios por igual.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICIOS ================= -->
+<section id="servicios" class="bg-cloud py-20 lg:py-28">
+  <div class="container">
+    <div class="mx-auto flex max-w-2xl flex-col items-center gap-4 text-center">
+      <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-gold-600"><span class="h-px w-6 bg-current opacity-60"></span>Servicios inmobiliarios</span>
+      <h2 class="text-3xl leading-tight text-petrol-900 sm:text-4xl">Soluciones para cada etapa del proceso</h2>
+      <p class="text-base leading-relaxed text-petrol-700/80">Te acompañamos con una asesoría integral, ya sea que quieras vender, arrendar, comprar o conocer el valor real de tu propiedad.</p>
+    </div>
+    <div id="services-grid" class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+  </div>
+</section>
+
+<!-- ================= PROPIEDADES DESTACADAS ================= -->
+<section id="propiedades" class="bg-white py-20 lg:py-28">
+  <div class="container">
+    <div class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+      <div class="flex max-w-2xl flex-col items-start gap-4 text-left">
+        <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-gold-600"><span class="h-px w-6 bg-current opacity-60"></span>Propiedades destacadas</span>
+        <h2 class="text-3xl leading-tight text-petrol-900 sm:text-4xl">Una selección pensada para ti</h2>
+        <p class="text-base leading-relaxed text-petrol-700/80">Casas, departamentos, oficinas y terrenos en venta y arriendo. Cada propiedad cuenta con asesoría dedicada.</p>
+      </div>
+      <a id="all-props" href="#" target="_blank" rel="noopener noreferrer" class="hidden shrink-0 items-center gap-2 rounded-full border border-petrol-200 px-6 py-3 text-sm font-semibold text-petrol-800 transition hover:border-gold-400 hover:bg-gold-400 hover:text-petrol-950 sm:inline-flex">Ver todas las propiedades</a>
+    </div>
+    <div id="props-grid" class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+  </div>
+</section>
+
+<!-- ================= CAPTACIÓN DE PROPIETARIOS ================= -->
+<section id="vende" class="relative overflow-hidden bg-petrol-950 py-20 lg:py-28">
+  <div class="pointer-events-none absolute inset-0 opacity-[0.06]" style="background-image:radial-gradient(circle at 20% 20%, #cda659 0, transparent 35%), radial-gradient(circle at 80% 0%, #4a7f87 0, transparent 30%);"></div>
+  <div class="container relative grid items-center gap-12 lg:grid-cols-2">
+    <div>
+      <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-gold-300"><span class="h-px w-6 bg-current opacity-60"></span>Para propietarios</span>
+      <h2 class="mt-4 text-3xl leading-tight text-white sm:text-4xl">¿Quieres vender o arrendar tu propiedad?</h2>
+      <p class="mt-5 max-w-lg text-base leading-relaxed text-petrol-100/80">Déjanos ayudarte a gestionar tu propiedad con una estrategia clara, difusión profesional y acompañamiento personalizado.</p>
+      <ul class="mt-8 grid gap-3 sm:grid-cols-2">
+        <li class="flex items-start gap-3 text-sm text-white/90"><span class="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-gold-400 text-petrol-950"><svg viewBox="0 0 24 24" class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span>Evaluación inicial de la propiedad.</li>
+        <li class="flex items-start gap-3 text-sm text-white/90"><span class="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-gold-400 text-petrol-950"><svg viewBox="0 0 24 24" class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span>Publicación en canales digitales.</li>
+        <li class="flex items-start gap-3 text-sm text-white/90"><span class="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-gold-400 text-petrol-950"><svg viewBox="0 0 24 24" class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span>Filtro de interesados.</li>
+        <li class="flex items-start gap-3 text-sm text-white/90"><span class="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-gold-400 text-petrol-950"><svg viewBox="0 0 24 24" class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span>Coordinación de visitas.</li>
+        <li class="flex items-start gap-3 text-sm text-white/90"><span class="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-gold-400 text-petrol-950"><svg viewBox="0 0 24 24" class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span>Acompañamiento hasta el cierre.</li>
+      </ul>
+      <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+        <a href="#contacto" class="inline-flex items-center justify-center rounded-full bg-gold-400 px-7 py-3.5 text-sm font-semibold text-petrol-950 shadow-card transition hover:-translate-y-0.5 hover:bg-gold-300">Solicitar evaluación de mi propiedad</a>
+        <a id="cta-eval" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-7 py-3.5 text-sm font-semibold text-white transition hover:border-white hover:bg-white/10">
+          <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor"><path d="M12.05 3a8.94 8.94 0 0 0-7.6 13.66L3 21l4.46-1.39A8.94 8.94 0 1 0 12.05 3Zm0 1.6a7.34 7.34 0 0 1 6.2 11.27 7.3 7.3 0 0 1-9.27 2.55l-.33-.18-2.65.82.83-2.57-.2-.34A7.34 7.34 0 0 1 12.05 4.6Zm-2.2 3.3c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02s.87 2.35.99 2.51c.12.16 1.71 2.74 4.22 3.74 2.09.83 2.51.66 2.97.62.46-.04 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.48-.73-1.71-.81-.23-.08-.4-.12-.56.12-.16.24-.64.81-.79.97-.14.16-.29.18-.53.06-.24-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.71-.14-.24-.02-.37.1-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.36-.77-1.86-.18-.42-.36-.41-.51-.42h-.4Z"/></svg>
+          Hablar por WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="relative aspect-[4/5] overflow-hidden rounded-3xl shadow-card">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Propietaria recibiendo asesoría inmobiliaria" class="h-full w-full object-cover" />
+      </div>
+      <div class="absolute -bottom-5 -left-5 hidden rounded-2xl bg-white p-5 shadow-card sm:block">
+        <p class="font-serif text-3xl text-petrol-900">+250</p>
+        <p class="text-xs font-medium uppercase tracking-wide text-petrol-500">propiedades gestionadas</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NUESTRO PROCESO ================= -->
+<section class="bg-cloud py-20 lg:py-28">
+  <div class="container">
+    <div class="mx-auto flex max-w-2xl flex-col items-center gap-4 text-center">
+      <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-gold-600"><span class="h-px w-6 bg-current opacity-60"></span>Nuestro proceso</span>
+      <h2 class="text-3xl leading-tight text-petrol-900 sm:text-4xl">Un camino claro hacia el cierre</h2>
+      <p class="text-base leading-relaxed text-petrol-700/80">Cuatro pasos simples y ordenados para que vivas el proceso inmobiliario con tranquilidad.</p>
+    </div>
+    <ol class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <li class="rounded-2xl border border-petrol-100 bg-white p-7 shadow-soft transition hover:-translate-y-1 hover:shadow-card"><span class="font-serif text-4xl text-gold-300">01</span><h3 class="mt-4 font-serif text-lg text-petrol-900">Diagnóstico inicial</h3><p class="mt-2 text-sm leading-relaxed text-petrol-700/80">Revisamos tu propiedad, objetivos y situación actual.</p></li>
+      <li class="rounded-2xl border border-petrol-100 bg-white p-7 shadow-soft transition hover:-translate-y-1 hover:shadow-card"><span class="font-serif text-4xl text-gold-300">02</span><h3 class="mt-4 font-serif text-lg text-petrol-900">Estrategia comercial</h3><p class="mt-2 text-sm leading-relaxed text-petrol-700/80">Definimos precio, presentación y canales de publicación.</p></li>
+      <li class="rounded-2xl border border-petrol-100 bg-white p-7 shadow-soft transition hover:-translate-y-1 hover:shadow-card"><span class="font-serif text-4xl text-gold-300">03</span><h3 class="mt-4 font-serif text-lg text-petrol-900">Gestión de interesados</h3><p class="mt-2 text-sm leading-relaxed text-petrol-700/80">Filtramos consultas, coordinamos visitas y damos seguimiento.</p></li>
+      <li class="rounded-2xl border border-petrol-100 bg-white p-7 shadow-soft transition hover:-translate-y-1 hover:shadow-card"><span class="font-serif text-4xl text-gold-300">04</span><h3 class="mt-4 font-serif text-lg text-petrol-900">Cierre seguro</h3><p class="mt-2 text-sm leading-relaxed text-petrol-700/80">Te acompañamos en la negociación y documentación final.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= POR QUÉ ELEGIRNOS ================= -->
+<section id="nosotros" class="bg-white py-20 lg:py-28">
+  <div class="container grid items-center gap-14 lg:grid-cols-2">
+    <div class="relative order-last lg:order-first">
+      <div class="relative aspect-[5/4] overflow-hidden rounded-3xl shadow-card">
+        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=80" alt="Equipo de Martínez Mera Propiedades asesorando a un cliente" class="h-full w-full object-cover" />
+      </div>
+      <div class="absolute -right-4 -top-4 hidden rounded-2xl border border-gold-200 bg-sand px-6 py-4 shadow-soft sm:block">
+        <p class="font-serif text-2xl text-petrol-900">Boutique</p>
+        <p class="text-xs font-medium uppercase tracking-wide text-gold-600">Asesoría cercana</p>
+      </div>
+    </div>
+    <div>
+      <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-gold-600"><span class="h-px w-6 bg-current opacity-60"></span>Por qué elegirnos</span>
+      <h2 class="mt-4 text-3xl leading-tight text-petrol-900 sm:text-4xl">Una corredora que acompaña, no solo publica</h2>
+      <ul class="mt-8 space-y-4">
+        <li class="flex items-start gap-3"><span class="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-petrol-900 text-gold-300"><svg viewBox="0 0 24 24" class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><span class="text-base text-petrol-800">Atención cercana y personalizada.</span></li>
+        <li class="flex items-start gap-3"><span class="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-petrol-900 text-gold-300"><svg viewBox="0 0 24 24" class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><span class="text-base text-petrol-800">Conocimiento del mercado inmobiliario.</span></li>
+        <li class="flex items-start gap-3"><span class="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-petrol-900 text-gold-300"><svg viewBox="0 0 24 24" class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><span class="text-base text-petrol-800">Gestión ordenada y transparente.</span></li>
+        <li class="flex items-start gap-3"><span class="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-petrol-900 text-gold-300"><svg viewBox="0 0 24 24" class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><span class="text-base text-petrol-800">Comunicación clara durante todo el proceso.</span></li>
+        <li class="flex items-start gap-3"><span class="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-petrol-900 text-gold-300"><svg viewBox="0 0 24 24" class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span><span class="text-base text-petrol-800">Enfoque en resultados reales, no solo publicaciones.</span></li>
+      </ul>
+      <blockquote class="mt-9 rounded-2xl border-l-4 border-gold-400 bg-cloud p-6">
+        <p class="font-serif text-xl italic leading-snug text-petrol-900">“No solo publicamos propiedades. Gestionamos oportunidades inmobiliarias.”</p>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIOS ================= -->
+<section class="bg-petrol-900 py-20 lg:py-28">
+  <div class="container">
+    <div class="mx-auto flex max-w-2xl flex-col items-center gap-4 text-center">
+      <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-gold-300"><span class="h-px w-6 bg-current opacity-60"></span>Testimonios</span>
+      <h2 class="text-3xl leading-tight text-white sm:text-4xl">La confianza de quienes ya trabajaron con nosotros</h2>
+    </div>
+    <div id="testimonials-grid" class="mt-14 grid gap-6 lg:grid-cols-3"></div>
+  </div>
+</section>
+
+<!-- ================= CONTACTO ================= -->
+<section id="contacto" class="bg-cloud py-20 lg:py-28">
+  <div class="container grid gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+    <div>
+      <span class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-gold-600"><span class="h-px w-6 bg-current opacity-60"></span>Contacto</span>
+      <h2 class="mt-4 text-3xl leading-tight text-petrol-900 sm:text-4xl">Conversemos sobre tu próxima decisión inmobiliaria</h2>
+      <p class="mt-5 max-w-md text-base leading-relaxed text-petrol-700/80">Cuéntanos qué necesitas y te responderemos a la brevedad. También puedes escribirnos directamente por WhatsApp.</p>
+      <a id="cta-wa-contact" href="#" target="_blank" rel="noopener noreferrer" class="mt-7 inline-flex items-center gap-2 rounded-full bg-[#25D366] px-6 py-3.5 text-sm font-semibold text-white shadow-soft transition hover:-translate-y-0.5 hover:brightness-105">
+        <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor"><path d="M12.05 3a8.94 8.94 0 0 0-7.6 13.66L3 21l4.46-1.39A8.94 8.94 0 1 0 12.05 3Zm0 1.6a7.34 7.34 0 0 1 6.2 11.27 7.3 7.3 0 0 1-9.27 2.55l-.33-.18-2.65.82.83-2.57-.2-.34A7.34 7.34 0 0 1 12.05 4.6Zm-2.2 3.3c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02s.87 2.35.99 2.51c.12.16 1.71 2.74 4.22 3.74 2.09.83 2.51.66 2.97.62.46-.04 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.48-.73-1.71-.81-.23-.08-.4-.12-.56.12-.16.24-.64.81-.79.97-.14.16-.29.18-.53.06-.24-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.71-.14-.24-.02-.37.1-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.36-.77-1.86-.18-.42-.36-.41-.51-.42h-.4Z"/></svg>
+        Hablar por WhatsApp
+      </a>
+      <dl class="mt-10 space-y-4">
+        <div class="flex items-center gap-3"><span class="grid h-10 w-10 place-items-center rounded-xl bg-white text-gold-600 shadow-soft"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10Z"/><circle cx="12" cy="11" r="2.2"/></svg></span><div><dt class="text-xs uppercase tracking-wide text-petrol-500">Oficina</dt><dd class="text-sm font-medium text-petrol-900">Av. Providencia 1234, Of. 56 · Santiago, Chile</dd></div></div>
+        <div class="flex items-center gap-3"><span class="grid h-10 w-10 place-items-center rounded-xl bg-white text-gold-600 shadow-soft"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor"><path d="M12.05 3a8.94 8.94 0 0 0-7.6 13.66L3 21l4.46-1.39A8.94 8.94 0 1 0 12.05 3Zm0 1.6a7.34 7.34 0 0 1 6.2 11.27 7.3 7.3 0 0 1-9.27 2.55l-.33-.18-2.65.82.83-2.57-.2-.34A7.34 7.34 0 0 1 12.05 4.6Z"/></svg></span><div><dt class="text-xs uppercase tracking-wide text-petrol-500">Teléfono</dt><dd class="text-sm font-medium text-petrol-900">+56 9 1234 5678</dd></div></div>
+        <div class="flex items-center gap-3"><span class="grid h-10 w-10 place-items-center rounded-xl bg-white text-gold-600 shadow-soft"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><div><dt class="text-xs uppercase tracking-wide text-petrol-500">Correo</dt><dd class="text-sm font-medium text-petrol-900">contacto@martinezmera.cl</dd></div></div>
+      </dl>
+    </div>
+
+    <div class="rounded-3xl border border-petrol-100 bg-white p-7 shadow-card sm:p-9">
+      <form id="contact-form" novalidate class="space-y-5">
+        <div class="grid gap-5 sm:grid-cols-2">
+          <div>
+            <label for="name" class="mb-1.5 block text-sm font-medium text-petrol-800">Nombre</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Tu nombre" class="w-full rounded-xl border border-petrol-200 bg-white px-4 py-3 text-sm text-petrol-900 outline-none transition placeholder:text-petrol-400 focus:border-gold-400 focus:ring-2 focus:ring-gold-400/30" />
+            <p class="err mt-1 hidden text-xs text-red-500"></p>
+          </div>
+          <div>
+            <label for="phone" class="mb-1.5 block text-sm font-medium text-petrol-800">Teléfono</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+56 9 ..." class="w-full rounded-xl border border-petrol-200 bg-white px-4 py-3 text-sm text-petrol-900 outline-none transition placeholder:text-petrol-400 focus:border-gold-400 focus:ring-2 focus:ring-gold-400/30" />
+            <p class="err mt-1 hidden text-xs text-red-500"></p>
+          </div>
+        </div>
+        <div>
+          <label for="email" class="mb-1.5 block text-sm font-medium text-petrol-800">Correo</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="tucorreo@email.com" class="w-full rounded-xl border border-petrol-200 bg-white px-4 py-3 text-sm text-petrol-900 outline-none transition placeholder:text-petrol-400 focus:border-gold-400 focus:ring-2 focus:ring-gold-400/30" />
+          <p class="err mt-1 hidden text-xs text-red-500"></p>
+        </div>
+        <div>
+          <label for="queryType" class="mb-1.5 block text-sm font-medium text-petrol-800">Tipo de consulta</label>
+          <select id="queryType" name="queryType" class="w-full rounded-xl border border-petrol-200 bg-white px-4 py-3 text-sm text-petrol-900 outline-none transition focus:border-gold-400 focus:ring-2 focus:ring-gold-400/30">
+            <option>Quiero vender</option>
+            <option>Quiero comprar</option>
+            <option>Quiero arrendar</option>
+            <option>Quiero tasar mi propiedad</option>
+            <option>Otra consulta</option>
+          </select>
+        </div>
+        <div>
+          <label for="message" class="mb-1.5 block text-sm font-medium text-petrol-800">Mensaje</label>
+          <textarea id="message" name="message" rows="4" placeholder="Cuéntanos en qué te podemos ayudar" class="w-full resize-none rounded-xl border border-petrol-200 bg-white px-4 py-3 text-sm text-petrol-900 outline-none transition placeholder:text-petrol-400 focus:border-gold-400 focus:ring-2 focus:ring-gold-400/30"></textarea>
+          <p class="err mt-1 hidden text-xs text-red-500"></p>
+        </div>
+        <button type="submit" class="inline-flex w-full items-center justify-center rounded-full bg-petrol-900 px-7 py-3.5 text-sm font-semibold text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-petrol-800">Enviar consulta</button>
+        <p class="text-center text-xs text-petrol-500">Al enviar aceptas ser contactado por nuestro equipo.</p>
+      </form>
+      <div id="form-success" class="hidden flex-col items-center justify-center py-10 text-center">
+        <span class="grid h-16 w-16 place-items-center rounded-full bg-gold-400/15 text-gold-600"><svg viewBox="0 0 24 24" class="h-8 w-8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></span>
+        <h3 class="mt-5 font-serif text-2xl text-petrol-900">¡Gracias por contactarnos!</h3>
+        <p class="mt-2 max-w-xs text-sm text-petrol-700/80">Abrimos WhatsApp con tu consulta. Si no se abrió, escríbenos directamente y te responderemos a la brevedad.</p>
+        <button type="button" id="reset-form" class="mt-6 text-sm font-semibold text-gold-600 underline-offset-4 hover:underline">Enviar otra consulta</button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-petrol-950 text-petrol-100">
+  <div class="container grid gap-10 py-16 sm:grid-cols-2 lg:grid-cols-4">
+    <div>
+      <div class="flex items-center gap-3">
+        <span class="grid h-10 w-10 place-items-center rounded-full border border-white/20 bg-white/10 font-serif text-sm font-semibold text-gold-300">MM</span>
+        <span class="leading-tight"><span class="block font-serif text-base font-semibold text-white">Martínez Mera</span><span class="block text-[10px] font-medium uppercase tracking-[0.3em] text-gold-300">Propiedades</span></span>
+      </div>
+      <p class="mt-5 max-w-xs text-sm leading-relaxed text-petrol-100/70">Corredora inmobiliaria boutique. Acompañamos a propietarios, compradores y arrendatarios con una gestión cercana y profesional.</p>
+      <div class="mt-6 flex gap-3">
+        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="grid h-10 w-10 place-items-center rounded-full bg-white/5 text-petrol-100 transition hover:bg-gold-400 hover:text-petrol-950"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="grid h-10 w-10 place-items-center rounded-full bg-white/5 text-petrol-100 transition hover:bg-gold-400 hover:text-petrol-950"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-3 1.6-3 3.4V11H9v3h2v7h3v-7h2.5l.5-3H14V9.6c0-.4.3-.6.6-.6Z"/></svg></a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="grid h-10 w-10 place-items-center rounded-full bg-white/5 text-petrol-100 transition hover:bg-gold-400 hover:text-petrol-950"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor"><path d="M6.5 8A1.5 1.5 0 1 0 5 6.5 1.5 1.5 0 0 0 6.5 8ZM5.5 10h2v8h-2Zm5 0h2v1.1a2.6 2.6 0 0 1 2.3-1.2c1.9 0 2.7 1.2 2.7 3.3V18h-2v-4.2c0-1-.4-1.6-1.3-1.6s-1.4.6-1.4 1.6V18h-2Z"/></svg></a>
+      </div>
+    </div>
+    <nav aria-label="Enlaces rápidos">
+      <h3 class="font-serif text-sm font-semibold uppercase tracking-wide text-white">Navegación</h3>
+      <ul class="mt-5 space-y-3 text-sm">
+        <li><a href="#inicio" class="text-petrol-100/70 transition hover:text-gold-300">Inicio</a></li>
+        <li><a href="#propiedades" class="text-petrol-100/70 transition hover:text-gold-300">Propiedades</a></li>
+        <li><a href="#servicios" class="text-petrol-100/70 transition hover:text-gold-300">Servicios</a></li>
+        <li><a href="#vende" class="text-petrol-100/70 transition hover:text-gold-300">Vende tu propiedad</a></li>
+        <li><a href="#nosotros" class="text-petrol-100/70 transition hover:text-gold-300">Nosotros</a></li>
+        <li><a href="#contacto" class="text-petrol-100/70 transition hover:text-gold-300">Contacto</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h3 class="font-serif text-sm font-semibold uppercase tracking-wide text-white">Servicios</h3>
+      <ul class="mt-5 space-y-3 text-sm">
+        <li><a href="#servicios" class="text-petrol-100/70 transition hover:text-gold-300">Venta de propiedades</a></li>
+        <li><a href="#servicios" class="text-petrol-100/70 transition hover:text-gold-300">Arriendo de propiedades</a></li>
+        <li><a href="#servicios" class="text-petrol-100/70 transition hover:text-gold-300">Compra de propiedades</a></li>
+        <li><a href="#servicios" class="text-petrol-100/70 transition hover:text-gold-300">Tasación comercial</a></li>
+        <li><a href="#servicios" class="text-petrol-100/70 transition hover:text-gold-300">Administración de propiedades</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-serif text-sm font-semibold uppercase tracking-wide text-white">Contacto</h3>
+      <ul class="mt-5 space-y-3 text-sm text-petrol-100/70">
+        <li class="flex items-start gap-2"><svg viewBox="0 0 24 24" class="mt-0.5 h-4 w-4 shrink-0 text-gold-300" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10Z"/><circle cx="12" cy="11" r="2.2"/></svg>Av. Providencia 1234, Of. 56 · Santiago, Chile</li>
+        <li><a id="footer-wa" href="#" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 transition hover:text-gold-300"><svg viewBox="0 0 24 24" class="h-4 w-4 shrink-0 text-gold-300" fill="currentColor"><path d="M12.05 3a8.94 8.94 0 0 0-7.6 13.66L3 21l4.46-1.39A8.94 8.94 0 1 0 12.05 3Z"/></svg>+56 9 1234 5678</a></li>
+        <li><a href="mailto:contacto@martinezmera.cl" class="flex items-center gap-2 transition hover:text-gold-300"><svg viewBox="0 0 24 24" class="h-4 w-4 shrink-0 text-gold-300" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>contacto@martinezmera.cl</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="container flex flex-col items-center justify-between gap-3 py-6 text-xs text-petrol-100/60 sm:flex-row">
+      <p>© <span id="year"></span> Martínez Mera Propiedades. Todos los derechos reservados.</p>
+      <p>Las propiedades publicadas son referenciales. Valores y disponibilidad sujetos a confirmación.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= BOTÓN FLOTANTE WHATSAPP ================= -->
+<a id="wa-float" href="#" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp" class="fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 rounded-full bg-[#25D366] py-3.5 pl-3.5 pr-4 text-sm font-semibold text-white shadow-card transition hover:-translate-y-0.5 hover:brightness-105">
+  <svg viewBox="0 0 24 24" class="h-6 w-6" fill="currentColor"><path d="M12.05 3a8.94 8.94 0 0 0-7.6 13.66L3 21l4.46-1.39A8.94 8.94 0 1 0 12.05 3Zm0 1.6a7.34 7.34 0 0 1 6.2 11.27 7.3 7.3 0 0 1-9.27 2.55l-.33-.18-2.65.82.83-2.57-.2-.34A7.34 7.34 0 0 1 12.05 4.6Zm-2.2 3.3c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02s.87 2.35.99 2.51c.12.16 1.71 2.74 4.22 3.74 2.09.83 2.51.66 2.97.62.46-.04 1.48-.6 1.69-1.18.21-.58.21-1.08.15-1.18-.06-.1-.22-.16-.46-.28-.24-.12-1.48-.73-1.71-.81-.23-.08-.4-.12-.56.12-.16.24-.64.81-.79.97-.14.16-.29.18-.53.06-.24-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.71-.14-.24-.02-.37.1-.49.11-.11.24-.29.36-.43.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.36-.77-1.86-.18-.42-.36-.41-.51-.42h-.4Z"/></svg>
+  <span class="hidden sm:inline">WhatsApp</span>
+</a>
+
+<script>
+/* ============ CONFIGURACIÓN ============ */
+const SITE = {
+  name: "Martínez Mera Propiedades",
+  shortName: "Martínez Mera",
+  whatsapp: "56912345678", // <-- número real en formato internacional, sin signos
+};
+const wa = (msg) => `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(msg)}`;
+const defaultMsg = "Hola Martínez Mera Propiedades, me gustaría recibir asesoría inmobiliaria.";
+
+/* ============ DATOS ============ */
+const ICONS = {
+  tag: '<path d="M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0l-7.59-7.58A2 2 0 0 1 2.41 12V5a2 2 0 0 1 2-2h7a2 2 0 0 1 1.41.59l7.18 7.17a2 2 0 0 1 0 2.83Z"/><circle cx="7.5" cy="7.5" r="1.5"/>',
+  key: '<circle cx="7.5" cy="15.5" r="4.5"/><path d="m10.7 12.3 9.3-9.3M16 5l3 3M14 7l2 2"/>',
+  search: '<circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>',
+  chart: '<path d="M3 3v18h18"/><path d="m7 14 3-4 3 2 4-6"/>',
+  building: '<rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M9 8h.01M15 8h.01M9 12h.01M15 12h.01M10 21v-3.5a2 2 0 0 1 4 0V21"/>',
+  bed: '<path d="M3 8v11M3 13h18v6M21 19v-4a3 3 0 0 0-3-3H7"/><circle cx="7" cy="10" r="1.5"/>',
+  bath: '<path d="M4 12V6a2 2 0 0 1 3.4-1.4L9 6"/><path d="M3 12h18v2a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><path d="M7 18v2M17 18v2"/>',
+  area: '<rect x="3" y="3" width="18" height="18" rx="1.5"/><path d="M3 9h4M3 15h4M9 3v4M15 3v4"/>',
+  pin: '<path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10Z"/><circle cx="12" cy="11" r="2.2"/>',
+};
+const svg = (name, cls="h-6 w-6") => `<svg viewBox="0 0 24 24" class="${cls}" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${ICONS[name]||""}</svg>`;
+
+const services = [
+  { title:"Venta de propiedades", icon:"tag", desc:"Gestionamos la venta de tu propiedad con una estrategia profesional, desde la publicación hasta el cierre." },
+  { title:"Arriendo de propiedades", icon:"key", desc:"Te ayudamos a encontrar arrendatarios adecuados y a gestionar el proceso con seguridad y respaldo." },
+  { title:"Compra de propiedades", icon:"search", desc:"Acompañamos a compradores en la búsqueda de casas, departamentos o inversiones inmobiliarias." },
+  { title:"Tasación comercial", icon:"chart", desc:"Orientamos el valor de mercado de tu propiedad para ayudarte a tomar mejores decisiones." },
+  { title:"Administración de propiedades", icon:"building", desc:"Apoyo en la gestión, cobranza y seguimiento de propiedades en arriendo, con reportes claros." },
+];
+
+const properties = [
+  { title:"Casa familiar con jardín", type:"Casa", op:"Venta", commune:"Lo Barnechea", price:"UF 12.500", area:220, bed:4, bath:3, img:"https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80" },
+  { title:"Departamento luminoso y moderno", type:"Departamento", op:"Venta", commune:"Providencia", price:"UF 5.300", area:86, bed:2, bath:2, img:"https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80" },
+  { title:"Departamento ideal para inversión", type:"Departamento", op:"Arriendo", commune:"Ñuñoa", price:"$680.000 / mes", area:58, bed:2, bath:1, img:"https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1200&q=80" },
+  { title:"Oficina corporativa equipada", type:"Oficina", op:"Arriendo", commune:"Las Condes", price:"$1.450.000 / mes", area:120, bed:0, bath:2, img:"https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80" },
+  { title:"Casa mediterránea con terraza", type:"Casa", op:"Venta", commune:"La Reina", price:"UF 9.800", area:180, bed:3, bath:3, img:"https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=1200&q=80" },
+  { title:"Terreno urbanizado en condominio", type:"Terreno", op:"Venta", commune:"Chicureo", price:"UF 4.200", area:650, bed:0, bath:0, img:"https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80" },
+];
+
+const testimonials = [
+  { quote:"Me ayudaron a vender mi departamento de forma ordenada y siempre estuvieron disponibles para resolver mis dudas.", author:"Carolina V.", role:"Vendió su departamento en Providencia" },
+  { quote:"Excelente gestión, muy profesionales y claros durante todo el proceso de arriendo.", author:"Rodrigo M.", role:"Arrendó su propiedad en Ñuñoa" },
+  { quote:"Sentí confianza desde el primer contacto. Me guiaron en la compra de mi primera propiedad.", author:"Javiera P.", role:"Compró su primera vivienda" },
+];
+
+/* ============ RENDER ============ */
+document.getElementById("services-grid").innerHTML = services.map(s => `
+  <article class="group flex flex-col rounded-2xl border border-petrol-100 bg-white p-7 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-gold-300 hover:shadow-card">
+    <span class="grid h-12 w-12 place-items-center rounded-xl bg-petrol-900 text-gold-300 transition-colors group-hover:bg-gold-400 group-hover:text-petrol-950">${svg(s.icon)}</span>
+    <h3 class="mt-5 font-serif text-xl text-petrol-900">${s.title}</h3>
+    <p class="mt-3 flex-1 text-sm leading-relaxed text-petrol-700/80">${s.desc}</p>
+    <a href="${wa(`Hola, me interesa el servicio de ${s.title.toLowerCase()}.`)}" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-petrol-800 transition-colors group-hover:text-gold-600">Solicitar información <span class="transition-transform group-hover:translate-x-1">→</span></a>
+  </article>`).join("");
+
+document.getElementById("props-grid").innerHTML = properties.map(p => {
+  const opStyle = p.op === "Venta" ? "bg-petrol-900 text-white" : "bg-gold-400 text-petrol-950";
+  const feat = (icon, val) => val ? `<div class="flex items-center gap-2 text-sm text-petrol-700">${svg(icon,"h-4 w-4 text-gold-600")}<span class="font-medium">${val}</span></div>` : "";
+  return `
+  <article class="group flex flex-col overflow-hidden rounded-2xl border border-petrol-100 bg-white shadow-soft transition duration-300 hover:-translate-y-1 hover:shadow-card">
+    <div class="relative aspect-[4/3] overflow-hidden">
+      <img src="${p.img}" alt="${p.title} en ${p.commune}" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+      <div class="absolute left-3 top-3 flex gap-2">
+        <span class="rounded-full px-3 py-1 text-xs font-semibold ${opStyle}">${p.op}</span>
+        <span class="rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-petrol-800 backdrop-blur">${p.type}</span>
+      </div>
+    </div>
+    <div class="flex flex-1 flex-col p-6">
+      <div class="flex items-center gap-1.5 text-xs font-medium uppercase tracking-wide text-petrol-500">${svg("pin","h-4 w-4 text-gold-600")}${p.commune}</div>
+      <h3 class="mt-2 font-serif text-lg leading-snug text-petrol-900">${p.title}</h3>
+      <p class="mt-2 text-xl font-semibold text-gold-600">${p.price}</p>
+      <div class="mt-4 flex flex-wrap gap-x-5 gap-y-2 border-t border-petrol-100 pt-4">
+        ${feat("area", p.area + " m²")}
+        ${p.bed > 0 ? feat("bed", p.bed + " dorm.") : ""}
+        ${p.bath > 0 ? feat("bath", p.bath + " baños") : ""}
+      </div>
+      <a href="${wa(`Hola, quiero más información sobre "${p.title}" en ${p.commune} (${p.op}).`)}" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex items-center justify-center rounded-full border border-petrol-200 px-5 py-2.5 text-sm font-semibold text-petrol-800 transition hover:border-gold-400 hover:bg-gold-400 hover:text-petrol-950">Ver detalle</a>
+    </div>
+  </article>`;
+}).join("");
+
+document.getElementById("testimonials-grid").innerHTML = testimonials.map(t => {
+  const stars = Array.from({length:5}).map(()=>'<svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor"><path d="m12 17.3-6.18 3.7 1.64-7.03L2 9.24l7.19-.61L12 2l2.81 6.63 7.19.61-5.46 4.73 1.64 7.03z"/></svg>').join("");
+  return `
+  <figure class="flex flex-col rounded-2xl bg-white/[0.06] p-7 ring-1 ring-white/10 transition hover:bg-white/[0.1]">
+    <div class="flex gap-0.5 text-gold-400" aria-label="5 de 5 estrellas">${stars}</div>
+    <blockquote class="mt-4 flex-1 text-base leading-relaxed text-petrol-50/90">“${t.quote}”</blockquote>
+    <figcaption class="mt-6 flex items-center gap-3 border-t border-white/10 pt-5">
+      <span class="grid h-11 w-11 place-items-center rounded-full bg-gold-400 font-serif text-base font-semibold text-petrol-950">${t.author.charAt(0)}</span>
+      <span><span class="block font-semibold text-white">${t.author}</span><span class="block text-xs text-petrol-100/70">${t.role}</span></span>
+    </figcaption>
+  </figure>`;
+}).join("");
+
+/* ============ ENLACES WHATSAPP ============ */
+document.getElementById("cta-whatsapp").href = wa(defaultMsg);
+document.getElementById("cta-whatsapp-m").href = wa(defaultMsg);
+document.getElementById("cta-wa-contact").href = wa(defaultMsg);
+document.getElementById("wa-float").href = wa(defaultMsg);
+document.getElementById("footer-wa").href = wa(defaultMsg);
+document.getElementById("all-props").href = wa("Hola, quiero ver más propiedades disponibles.");
+document.getElementById("cta-eval").href = wa("Hola, quiero solicitar una evaluación de mi propiedad.");
+
+/* ============ HEADER STICKY ============ */
+const header = document.getElementById("site-header");
+const navLinks = document.querySelectorAll(".nav-link");
+const logoBadge = document.getElementById("logo-badge");
+const logoName = document.getElementById("logo-name");
+const menuBtn = document.getElementById("menu-btn");
+function onScroll() {
+  const s = window.scrollY > 24;
+  header.classList.toggle("bg-white/95", s);
+  header.classList.toggle("shadow-soft", s);
+  header.classList.toggle("backdrop-blur", s);
+  navLinks.forEach(l => { l.classList.toggle("text-petrol-700", s); l.classList.toggle("text-white/90", !s); });
+  logoName.classList.toggle("text-petrol-900", s); logoName.classList.toggle("text-white", !s);
+  menuBtn.classList.toggle("text-petrol-900", s); menuBtn.classList.toggle("text-white", !s);
+  logoBadge.classList.toggle("bg-petrol-900", s); logoBadge.classList.toggle("border-petrol-200", s);
+  logoBadge.classList.toggle("bg-white/10", !s); logoBadge.classList.toggle("border-white/30", !s);
+}
+window.addEventListener("scroll", onScroll, { passive:true }); onScroll();
+
+/* ============ MENÚ MÓVIL ============ */
+const mobileMenu = document.getElementById("mobile-menu");
+const menuIcon = document.getElementById("menu-icon");
+let open = false;
+function toggleMenu(force) {
+  open = force !== undefined ? force : !open;
+  mobileMenu.classList.toggle("hidden", !open);
+  menuBtn.setAttribute("aria-expanded", String(open));
+  document.body.style.overflow = open ? "hidden" : "";
+  menuIcon.innerHTML = open ? '<path d="M6 6l12 12M18 6 6 18"/>' : '<path d="M4 7h16M4 12h16M4 17h16"/>';
+}
+menuBtn.addEventListener("click", () => toggleMenu());
+document.getElementById("mobile-overlay").addEventListener("click", () => toggleMenu(false));
+document.querySelectorAll(".m-link, #cta-whatsapp-m").forEach(a => a.addEventListener("click", () => toggleMenu(false)));
+
+/* ============ FORMULARIO ============ */
+const form = document.getElementById("contact-form");
+const success = document.getElementById("form-success");
+function setError(input, msg) {
+  const p = input.parentElement.querySelector(".err");
+  if (msg) { p.textContent = msg; p.classList.remove("hidden"); input.classList.add("border-red-400"); }
+  else { p.classList.add("hidden"); input.classList.remove("border-red-400"); }
+}
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const f = e.target;
+  let ok = true;
+  const checks = [
+    [f.name, f.name.value.trim() ? "" : "Ingresa tu nombre."],
+    [f.phone, f.phone.value.trim() ? "" : "Ingresa tu teléfono."],
+    [f.email, !f.email.value.trim() ? "Ingresa tu correo." : (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email.value) ? "" : "Correo no válido.")],
+    [f.message, f.message.value.trim() ? "" : "Cuéntanos brevemente tu consulta."],
+  ];
+  checks.forEach(([input, msg]) => { setError(input, msg); if (msg) ok = false; });
+  if (!ok) return;
+  const text = `Hola ${SITE.shortName}, soy ${f.name.value}.\nTipo de consulta: ${f.queryType.value}.\nTeléfono: ${f.phone.value}.\nCorreo: ${f.email.value}.\nMensaje: ${f.message.value}`;
+  window.open(wa(text), "_blank", "noopener,noreferrer");
+  form.classList.add("hidden");
+  success.classList.remove("hidden"); success.classList.add("flex");
+  form.reset();
+});
+document.getElementById("reset-form").addEventListener("click", () => {
+  success.classList.add("hidden"); success.classList.remove("flex");
+  form.classList.remove("hidden");
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
